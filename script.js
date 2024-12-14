@@ -5,11 +5,14 @@
 const body = document.querySelector("body");
 
 const container = document.createElement("div");
+container.classList.add("container");
 body.appendChild(container);
 
 const pixel = document.createElement("div");
-container.appendChild(pixel);
-
+pixel.classList.add("pixel");
+for (let i = 16; i < 101; i++) {
+  container.appendChild(pixel);
+}
 
 // modify grid square density via prompt or a slide bar to a maximum of 100x100
 
