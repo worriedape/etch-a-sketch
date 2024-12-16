@@ -1,7 +1,6 @@
 html,
 body {
   display: flex;
-  /*margin: 5%;*/
   height: 100%;
   width: 100%;
   align-items: center;
@@ -10,18 +9,34 @@ body {
 
 .container {
   display: flex;
-  border: 2px solid rgb(4, 155, 255);
+  /*border: 1px solid rgb(4, 155, 255);*/
   /*border-radius: 4px;*/
   aspect-ratio: 1;
-  width: 80%;
+  margin: 10%;
+  /* hard coded values */
+  /*min-width: 720px;
+  max-width: 760px;*/
   flex-wrap: wrap;
+  box-shadow: 2px 2px 2px rgba(134, 139, 139, 0.199);
+  /*Object.assign(container.style, {
+  display: "flex",
+  aspectRatio: "1",
+  margin: "10%",
+  flexWrap: "wrap",
+  boxShadow: "2px 2px 2px rgba(134, 139, 139, 0.2)",
+});*/
 }
 
 /* or .pixel */
 .container > * {
   border: 1px solid rgba(0, 0, 255, 0.25);
-  /*background-color: rgb(222, 251, 255);*/
-  width: 1.28%;
+  flex: 0 1 1%;
+  /*background-color: rgb(222, 251, 255);
+  721 to 786px
+  aspect-ratio: 1;
+  
+  margin: 0;
+  padding: 0;*/
 }
 
 .pixel:hover {
