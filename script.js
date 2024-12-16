@@ -21,8 +21,8 @@ const fragment = document.createDocumentFragment();
 /*let percentage = (fill - 100) / (100) * 100;*/
 
 let i = 1;
-let fill = 64;
-let x = fill * fill;
+let fill = prompt("Enter grid density");
+let x = +fill * +fill;
 // create pixel x times for row (X)
 for (; i <= x; i++) {
   //container.append(pixel);
