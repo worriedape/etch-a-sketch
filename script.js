@@ -12,9 +12,10 @@ body.appendChild(container);
 const fragment = document.createDocumentFragment();
 
 let i = 1;
-let x = 64;
+let fill = 64;
+let x =  fill * fill;
 // create pixel x times for row (X)
-for (; i < x; i++) {
+for (; i <= x; i++) {
   //container.append(pixel);
   const pixel = document.createElement("div");
   pixel.classList.add("pixel");
